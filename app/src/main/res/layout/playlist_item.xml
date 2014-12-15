@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_background">
+    
+    <ImageView
+        android:id="@+id/playlist_thumbnail"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:padding="5dp"/>
+    
+    <TextView
+        android:id="@+id/playlist_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/playlist_thumbnail"/>
+
+    <TextView
+        android:id="@+id/playlist_total_videos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/playlist_thumbnail"
+        android:layout_below="@id/playlist_title"/>
+
+</RelativeLayout>
